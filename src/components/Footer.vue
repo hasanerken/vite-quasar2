@@ -4,7 +4,7 @@ const tab = $ref('home');
 
 <template>
   <div class="flex flex-col flex-center">
-    <q-tabs v-model="tab" active-class="text-teal">
+    <q-tabs v-model="tab" active-class="text-teal-300">
       <q-route-tab
         name="home"
         class="i-carbon-session-border-control self-center m-5 w-7"

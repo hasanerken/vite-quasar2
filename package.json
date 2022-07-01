@@ -7,7 +7,9 @@
   "private": true,
   "scripts": {
     "dev": "quasar dev",
+    "dev-ssr": "quasar dev -m ssr",
     "build": "quasar build",
+    "build-ssr": "quasar build -m ssr && cd dist/ssr && yarn && yarn start",
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "vitest",
@@ -18,7 +20,7 @@
     "@quasar/extras": "^1.0.0",
     "@vueuse/core": "^8.3.1",
     "@vueuse/head": "^0.7.6",
-    "axios": "^0.27.1",
+    "axios": "^0.27.2",
     "pinia": "^2.0.11",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",

@@ -14,4 +14,8 @@ useTitle('Vital - Admin');
 <route lang="yaml">
 meta:
   layout: admin
+  requiresAuth: true
+  roles:
+    - admin
+    - client
 </route>
